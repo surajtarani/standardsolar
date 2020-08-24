@@ -2102,12 +2102,24 @@ section {
   font-weight: 600;
 }
 
-#footer .footer-newsletter form {
+/* #footer .footer-newsletter form {
   margin-top: 30px;
   background: #fff;
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
+} */
+
+#footer .footer-newsletter button {
+  margin-top: 30px;
+  background: red;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  color: white;
+  width: 11rem;
+  height: 3rem;
+  font-size: large;
 }
 
 #footer .footer-newsletter form input[type="tel"] {
