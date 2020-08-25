@@ -3,6 +3,8 @@
 * URL: https://bootstrapmade.com/php-email-form/
 * Author: BootstrapMade.com
 */
+header('Access-Control-Allow-Origin: *');
+
 !(function($) {
   "use strict";
 

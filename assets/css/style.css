@@ -368,6 +368,17 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+#hero .carousel-text-1 {
+  /* background-color: ivory; */
+  color: black;
+  text-align: left;
+}
+
+#hero .carousel-text-2 {
+  background-color: ivory;
+  color: red;
+}
+
 #hero .carousel-item {
   width: 100%;
   height: 70vh;
@@ -399,8 +410,30 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 120px;
 }
 
-#hero .carousel-content {
+#hero .carousel-content .carousel-img {
   text-align: center;
+}
+
+#hero .carousel-content .carousel-img img {
+  max-width: 70%;
+}
+
+#hero .carousel-content .carousel-img span {
+  color: white;
+}
+
+#hero h3 {
+  color: #2e2e2e;
+  margin-bottom: 0px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#hero h3 span {
+  color: #e96b56;
+  /* background-color: burlywood; */
+  padding: 1rem;
+
 }
 
 #hero h2 {
@@ -484,6 +517,30 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
+  /* border-radius: 50px; */
+  transition: 0.5s;
+  line-height: 1;
+  /* margin: 10px; */
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #e96b56;
+  background: #e96b56;
+}
+
+#hero .btn-get-started:hover {
+  background: transparent;
+  color: #e96b56;
+  text-decoration: none;
+}
+
+.btn-submit {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
   border-radius: 50px;
   transition: 0.5s;
   line-height: 1;
@@ -495,7 +552,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #e96b56;
 }
 
-#hero .btn-get-started:hover {
+.btn-submit:hover {
   background: transparent;
   color: #e96b56;
   text-decoration: none;
@@ -694,11 +751,11 @@ section {
   transition: all ease-in-out 0.3s;
 }
 
-.services .icon-box .icon {
+.services .icon-box .product {
   margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: #e96b56;
+  /* width: 64px;
+  height: 64px; */
+  /* background: #e96b56; */
   border-radius: 5px;
   transition: all .3s ease-out 0s;
   display: flex;
@@ -708,19 +765,24 @@ section {
   transform-style: preserve-3d;
 }
 
-.services .icon-box .icon i {
-  color: #fff;
-  font-size: 28px;
+.services .icon-box .product img{
+  width: 15rem;
+  /* margin: 5rem; */
 }
 
-.services .icon-box .icon::before {
+/* .services .icon-box .product i {
+  color: #fff;
+  font-size: 28px;
+} */
+
+.services .icon-box .product::before {
   position: absolute;
   content: '';
   left: -8px;
   top: -8px;
   height: 100%;
   width: 100%;
-  background: #fbe2dd;
+  /* background: #fbe2dd; */
   border-radius: 5px;
   transition: all .3s ease-out 0s;
   transform: translateZ(-1px);
@@ -732,9 +794,9 @@ section {
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
+/* .services .icon-box h4 a {
   color: #545454;
-}
+} */
 
 .services .icon-box p {
   line-height: 24px;
@@ -747,15 +809,15 @@ section {
   border-color: #e96b56;
 }
 
-.services .icon-box:hover .icon {
+.services .icon-box:hover .product {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.services .icon-box:hover .product i {
   color: #e96b56;
 }
 
-.services .icon-box:hover .icon::before {
+.services .icon-box:hover .product::before {
   background: #ef9383;
 }
 
@@ -1460,7 +1522,7 @@ section {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form button[type="button"] {
   background: #e96b56;
   border: 0;
   border-radius: 50px;
@@ -1469,7 +1531,7 @@ section {
   transition: 0.4s;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+.contact .php-email-form button[type="button"]:hover {
   background: #e6573f;
 }
 
@@ -2040,21 +2102,34 @@ section {
   font-weight: 600;
 }
 
-#footer .footer-newsletter form {
+/* #footer .footer-newsletter form {
   margin-top: 30px;
   background: #fff;
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
+} */
+
+#footer .footer-newsletter button {
+  margin-top: 30px;
+  background: red;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  color: white;
+  width: 11rem;
+  height: 3rem;
+  font-size: large;
+  text-decoration: none;
 }
 
-#footer .footer-newsletter form input[type="email"] {
+#footer .footer-newsletter form input[type="tel"] {
   border: 0;
   padding: 8px;
   width: calc(100% - 140px);
 }
 
-#footer .footer-newsletter form input[type="submit"] {
+#footer .footer-newsletter form input[type="button"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -2070,7 +2145,7 @@ section {
   border-radius: 50px;
 }
 
-#footer .footer-newsletter form input[type="submit"]:hover {
+#footer .footer-newsletter form input[type="button"]:hover {
   background: #e6573f;
 }
 
