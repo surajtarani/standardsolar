@@ -2120,6 +2120,7 @@ section {
   width: 11rem;
   height: 3rem;
   font-size: large;
+  text-decoration: none;
 }
 
 #footer .footer-newsletter form input[type="tel"] {
